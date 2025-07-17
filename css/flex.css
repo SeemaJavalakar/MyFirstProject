@@ -1,0 +1,36 @@
+body{
+  border: 2px solid black;
+}
+
+.content{
+  display: flex;
+  /* row by default
+  flex-direction: column; */
+
+  /* if you want items to go to next line if there is no space you can set it to wrap if nowrap is set
+  the items will remain same line*/
+  flex-wrap: wrap;
+  /* align content is unlocked only when flex wrap is set to wrap*/
+  align-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.content .items
+{
+  border: 1px solid black;
+  width: 40%;
+}
+
+#item1{
+  flex-grow: 1; /*
+  it will take more space and allow the remaining space equelly disctribute bewteen other elements*/
+}
+
+#item2{
+  flex-shrink: 1; /*
+  it will make the element to shrink faster when window is being minimized */
+ flex-basis: 50px; /*this prop will overwrite the existing width of the element */
+}
+
+

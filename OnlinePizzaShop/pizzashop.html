@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Comatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Pizza Shop Website Design</title>
+
+  <!--font awesome cdn link-->
+  <link rel="stylesheet" href="../css/styles_pizaashop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+
+  <!--header section starts here-->
+  <header class="header">
+     <section class="flex">
+      <a href="#home" class="logo">Pizza.</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Orders</a>
+        <a href="#fqa">FAQ</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="order-btn" class="fas fa-box"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+     </section>
+  </header>
+  <!--header section ends here-->
+
+  <!--user section-->
+<div class="user-account">
+  <section>
+  <div id="close-acount"><span>close</span></div>
+
+  <div class="user">
+    <p><span>you are not logged in now</span></p>
+  </div>
+
+  <div class="display-orders">
+    <p>pizza-1  <span>($3/-x.2)</span></p>
+    <p>pizza-03 <span>($2/-x.1)</span></p>
+    <p>pizza-06 <span>($4/-x.4)</span></p>
+    <p>pizza-07 <span>($2/-x.1)</span></p>
+  </div>
+
+  <div class="flex">
+    <form action="" method="post">
+      <h3>Login now</h3>
+      <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="50">
+      <input type="password" name="password" required class="box" placeholder="enter your password" maxlength="50">
+      <input type="submit" value="Login now" name="login" class="btn">
+
+      
+    </form>
+    <form action="" method="post">
+      <h3>Register now</h3>
+      <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="50">
+      <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+      <input type="password" name="password" required class="box" placeholder="enter your password" maxlength="50">
+      <input type="password" name="cpassword" required class="box" placeholder="confirm your password" maxlength="50">
+      <input type="submit" value="Register now" name="login" class="btn">
+    </form>
+  </div>
+  </section>
+
+</div>
+  <!--user section ends-->
+
+
+  <!--My orders begins-->
+  <div class="my-orders">
+    <section>
+      <div id="close-orders"><span>Close</span></div>
+      <h3 class="title">My Orders</h3>
+      <div class="box">
+        <p>Placed on : <span>06/12/2025</span></p>
+        <p>name : <span>Shaikh abdullah</span>
+        </p>
+        <p>number : <span>1234567890</span></p>
+        <p>address : <span>Lorem ipsum dolor sit amet consectetur, quis consequuntur, veritatis itaque,</span></p>
+        <p>Payment method : <span>Cash on delivery</span></p>
+        <p>your orders : <span>pizza 01 $3/-x2,pizza 03 $2/-x1,pizza 06 $4/-x5,pizza 07 $2/-x1</span></p>
+        <p>total price : <span>$11/-</span></p>
+        <p>payment status : <span style="color: var(--red);">Paid</span></p>
+      </div>
+  
+      <div class="box">
+        <p>Placed on : <span>06/12/2025</span></p>
+        <p>name : <span>Shaikh abdullah</span>
+        </p>
+        <p>number : <span>1234567890</span></p>
+        <p>address : <span>Lorem ipsum dolor sit amet consectetur</span></p>
+        <p>Payment method : <span>Cash on delivery</span></p>
+        <p>your orders : <span>pizza 01 $3/-x2,pizza 03 $2/-x1,pizza 06 $4/-x5,pizza 07 $2/-x1</span></p>
+        <p>total price : <span>$11/-</span></p>
+        <p>payment status : <span style="color: var(--red);">Paid</span></p>
+      </div>
+    </section>
+  </div>
+  
+  
+  
+  <!--My orders ends-->
+
+<!--shopping cart begins-->
+<div class="shopping-cart">
+  <section>
+    <div id="close-cart">
+      <span>Close</span>Close
+    </div>
+    <div class="title">My items</div>
+    
+      <div class="box">
+        <a href="#" class="fas fa-times"></a><img src="../images/Pizzashop/pizza1.png" alt="">
+        <div class="content">
+          <p>pizza-06 <span>($4/-x.4)</span></p>
+        </div>
+        <form action="" method="post">
+          <input type="number" name="quantity" class="qty" min="1" max="100" id="quantity">
+          <button type="submit" class="fas fa-edit" name="update_qty"></button>
+        </form>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-times"></a><img src="../images/Pizzashop/pizza4.png" alt="">
+        <div class="content">
+          <p>pizza-06 <span>($4/-x.4)</span></p>
+        </div>
+        <form action="" method="post">
+          <input type="number" name="quantity" class="qty" min="1" max="100" id="quantity">
+          <button type="submit" class="fas fa-edit" name="update_qty"></button>
+        </form>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-times"></a><img src="../images/Pizzashop/pizza_2-remove-bg.png" alt="">
+        <div class="content">
+          <p>pizza-06 <span>($4/-x.4)</span></p>
+        </div>
+        <form action="" method="post">
+          <input type="number" name="quantity" class="qty" min="1" max="100" id="quantity">
+          <button type="submit" class="fas fa-edit" name="update_qty"></button>
+        </form>
+      </div>
+
+      <div class="box">
+        <a href="#" class="fas fa-times"></a><img src="../images/Pizzashop/pizza2.png" alt="">
+        <div class="content">
+          <p>pizza-06 <span>($4/-x.4)</span></p>
+        </div>
+        <form action="" method="post">
+          <input type="number" name="quantity" class="qty" min="1" max="100" id="quantity">
+          <button type="submit" class="fas fa-edit" name="update_qty"></button>
+        </form>
+      </div>
+
+  </section>
+</div>
+<!--shoppint cart ends-->
+
+
+
+
+    <!--custom js file-->
+
+  <script src="../js/script_pizzashop/script.js"></script>
+</body>
+</html>

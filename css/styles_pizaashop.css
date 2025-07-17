@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --red : #e74c3c;
+ --black : #333;
+ --white : #fff;
+ --light-bg : #f5f5f5;
+ --light-color : #666;
+  --border : .1rem solid #666;
+  --box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1) ;
+
+}
+
+*::selection{
+  background-color: var(--white);
+  color : var(--black);
+}
+
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 6.5rem;
+}
+
+::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+ background-color: var(--red);
+ border-radius: 5rem;
+}
+
+body{
+  background-color: var(--light-bg);
+}
+
+section{
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .flex .logo{
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.header .flex .navbar a{
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.header .flex .navbar a:hover{
+  text-decoration: underline;
+  color: var(--red);
+}
+
+.header .flex .icons div{
+  font-size: 2rem;
+  color: var(--light-color);
+  cursor: pointer;
+  margin-left: 1.7rem;
+}
+
+.header .flex .icons div:hover{
+  color :var(--red)
+}
+.header .flex .icons div span{
+font-size: 2rem;
+}
+
+#menu-btn{
+  display: none;
+}
+
+.user-account{
+  position: fixed;
+  top: 0;
+  right: -110%;
+  z-index: 1100;
+  background-color: var(--white);
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+
+
+}
+
+.user-account.active{
+  right: 0%;
+  
+  
+}
+
+.user-account #close-acount
+{
+  text-align: right;
+  margin-bottom: 2rem;
+
+}
+
+.user-account #close-acount span{
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.user-account #close-acount span:hover{
+ color:var(--black)
+}
+
+.user-account .user{
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+}
+
+.user-account .user p{
+font-size: 2rem;
+color: var(--black);
+}
+
+.user-account .user p span{
+  color: var(--red);
+  
+}
+
+.user-account .display-orders
+{
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.user-account .display-orders p{
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  background-color: var(--white);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.user-account .display-orders p span{
+  color: var(--red);
+}
+
+.user-account .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+
+}
+
+.user-account .flex form{
+  flex: 1 1 40rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  background-color: var(--light-bg);
+}
+
+.user-account .flex form h3{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+
+.user-account .flex form .box{
+width: 100%;
+margin: 1rem 0;
+border-radius: .5rem;
+background-color: var(--white);
+padding: .5rem;
+font-size: 1.8rem;
+border: none;
+}
+
+.btn{
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: .5rem;
+padding: 1rem 3rem;
+font-size: 1.5rem;
+background-color: var(--red);
+color: var(--white);
+cursor: pointer;
+text-transform: uppercase;
+border: none;}
+
+
+.my-orders{
+  position: fixed;
+  top: 0;right: -110%;
+  width: 35rem;
+  z-index: 1100;
+  background-color: var(--light-bg);
+  height: 100vh;
+  overflow-y: scroll;
+  border-left: var(--border);
+  overflow-y: scroll;
+}
+
+.my-orders.active{
+  right: 0%;
+}
+
+
+.my-orders #close-orders
+{
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.my-orders #close-orders span{
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.my-orders #close-orders span:hover{
+ color:var(--black)
+}
+
+.my-orders .title{
+ text-align: center;
+ margin-bottom: 1rem;
+ color: var(--black);
+ font-size: 2.5rem;
+ text-transform: capitalize;
+}
+
+.my-orders .box{
+  
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding:1rem 2rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--box-shadow);
+}
+
+.my-orders .box p{
+   margin: 1rem 0;
+   font-size:  2rem;
+   color: var(--light-color);
+   line-height: 1.5;
+}
+
+.my-orders .box p span{
+  color: var(--black);
+}
+
+.shopping-cart{
+  position: fixed;
+  top: 0;right: -110%;
+  width: 35rem;
+  z-index: 1100;
+  background-color: var(--light-bg);
+  height: 100vh;
+  overflow-y: scroll;
+  border-left: var(--border);
+  overflow-y: scroll;
+}
+
+.shopping-cart.active{
+  right: 0%;
+}
+
+
+
+@media (max-width:991px) {
+  html{
+    font-size: 50%;
+  }
+}
+
+@media (max-width:768px) {
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .flex .navbar{
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    background-color: var(--white);
+    border-bottom: var(--border);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+  }
+
+  .header .flex .navbar.active{
+          clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+        }
+    .header .flex .navbar a{
+    display: block;
+    margin: 2rem;
+    
+  }
+
+}
+
+@media (max-width:450px) {
+  html{
+    font-size: 45%;
+  }
+
+  .my-orders{
+    width: 100%;
+  }
+}
